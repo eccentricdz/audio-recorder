@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Audio Recorder</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
+  <script src="recorder.js"></script>
+  <script src="jquery-1.8.2.js"></script>
+  <script src="knob/js/jquery.knob.js"></script>
+   
+</head>	
+<body>
+  <img id="logo" src="logo.png"></img>
+
+  <div class="container">
+    <p class="chrome"><i class="fa fa-warning"></i>&nbspWorks in Chrome only</p>
+	 <section class="wrapper">
+    <ul class="recordlist">
+    <li class="file" id="dummy">
+      <input type="text" class="dial" value="0" id="test">
+      <ul class="controls">
+        <li class="play"><a><i class="fa fa-play"></i></a></li>
+        <li class="pause"><a><i class="fa fa-pause"></i></a></li>
+      </ul>
+      <p class="download"><a class="dload">Recording <span class="index">0</span>&nbsp <i class="fa fa-download"></i></a></p>
+    </li>
+  </ul>
+      <div class="button" data-active="false">
+      </div> 
+      <div class="button" data-active="true">
+      </div> 
+      <p id="duration"><span id="minute">00</span>:<span id="second">00</:span></p>
+      <p id="recording"><i class="fa fa-spinner fa-spin"></i>&nbsp&nbsprecording</p>
+   </section>
+
+    <canvas id="visualize" height="400px"></canvas>
+  </div>
+</body>
+<script src="player.js"></script>
+</html>
